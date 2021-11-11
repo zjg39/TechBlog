@@ -41,6 +41,7 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
+// take user to main page after login success
 router.get('/login', (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/');
