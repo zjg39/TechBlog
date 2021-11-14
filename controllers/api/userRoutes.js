@@ -51,7 +51,7 @@ router.post('/login', async (req, res) => {
     res.status(400).json({ message: 'Hmm... there doesn\'t seem to be an account by that name...' });
   }
 });
-
+// if the user is logged in and the logout route is called, the session is ended (destroyed)
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
