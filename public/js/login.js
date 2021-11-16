@@ -1,9 +1,11 @@
 // Login function
 const loginFormHandler = async function(event) {
+    console.log(event);
+    debugger
     event.preventDefault();
   
     const usernameEl = document.querySelector('#username-input-login');
-    const passwordEl = document.querySelector('#password-input-login');
+    const passwordEl = document.querySelector('#input-password');
   // Route
     const response = await fetch('/api/user/login', {
       method: 'POST',
