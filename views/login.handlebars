@@ -1,18 +1,18 @@
-<div class="card">
-  <div class="card-header">
+<div class="card position-absolute top-50 start-50 col-2 mt-2">
+  <div class="card-header bg-primary text-center">
     <h2>Login</h2>
   </div>
   <form id="login-form" class="card-body">
     <div>
-      <label for="username-input-login">Username</label>
-      <input type="text" id="username-input-login" />
+      <label for="username-input-login">Username: </label>
+      <input type="text" id="username-input-login" class="bg-info" />
     </div>
     <div>
-      <label for="input-password" class="form-label">Password</label>
-      <input type="password" id="input-password" />
+      <label for="input-password" class="form-label">Password: </label>
+      <input type="password" id="input-password" class="bg-info" />
     </div>
-    <button type="submit" id="login-btn" class="btn">Login!</button>
-    <a type="button" href="/signup">Sign up instead</a>
+    <button type="submit" id="login-btn" class="btn-primary position-relative bottom-0 start-50">Login!</button>
+    <a type="button" href="/signup">Sign up!</a>
   </form>
 </div>
 
